@@ -117,6 +117,7 @@
 				AFCBAC0E178B5E0200E32967 /* Sources */,
 				AFCBAC0F178B5E0200E32967 /* Frameworks */,
 				AFCBAC10178B5E0200E32967 /* Resources */,
+				AFCBAC38178B5E3300E32967 /* Increment Build Number */,
 			);
 			buildRules = (
 			);
@@ -168,6 +169,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFCBAC38178B5E3300E32967 /* Increment Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/tools/bump_build_number.sh \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFCBAC0E178B5E0200E32967 /* Sources */ = {
